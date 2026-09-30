@@ -25,7 +25,7 @@ python -m venv venv
 # (On Linux/Mac use: source venv/bin/activate)
 
 # Install the required dependencies
-pip install -r satsa/requirements.txt
+pip install -r requirements.txt
 ```
 
 ### 2. Configure Python Path
@@ -91,4 +91,4 @@ While SAT-SA is designed to be air-gapped, you can deploy it to Streamlit Commun
 5. **App URL:** Customize your URL (e.g., `sat-sa-demo`).
 6. Click **Deploy!**
 
-*Note: Streamlit Cloud will automatically read the `satsa/requirements.txt` file and install the necessary dependencies.*
+*Note: Streamlit Cloud will automatically read the `requirements.txt` file and install the necessary dependencies.*

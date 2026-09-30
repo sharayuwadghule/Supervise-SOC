@@ -21,11 +21,12 @@ New-Item -ItemType Directory -Force -Path "$DeployDir\data" | Out-Null
 # 2. Copy Source Code
 Write-Host "Copying source code..."
 Copy-Item -Path "$SourceDir\*" -Destination "$DeployDir\src" -Recurse -Force
+Copy-Item -Path "C:\Users\wadgh\Desktop\Work Stuff\Supervise-SOC\requirements.txt" -Destination "$DeployDir\src\requirements.txt" -Force
 
 # 3. Download Wheels for Offline Installation
 Write-Host "Downloading Python wheels for offline installation (wheelhouse)..."
 # In a real environment we would use pip download:
-# pip download -r "$SourceDir\requirements.txt" -d "$DeployDir\wheelhouse"
+# pip download -r "$DeployDir\src\requirements.txt" -d "$DeployDir\wheelhouse"
 Write-Host "  -> (Simulated) Downloaded offline dependencies to wheelhouse."
 
 # 4. Generate Installation Script
