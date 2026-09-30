@@ -16,7 +16,7 @@ from satsa.scoring.prioritiser import aggregate_capability_scores, calculate_att
 from satsa.scoring.optimiser import optimize_review_sample
 from satsa.audit.chain import log_event, verify_chain
 from satsa.synthetic.generator import generate_sample_data
-from satsa.ingest.loader import load_data
+from satsa.ingest.loader import load_data as ingest_data
 
 # --- Page Config ---
 st.set_page_config(page_title="SAT-SA Examiner", page_icon=":material/admin_panel_settings:", layout="wide", initial_sidebar_state="expanded")
@@ -102,7 +102,7 @@ generate_demo = st.sidebar.button(":material/database: Load Demo Data", use_cont
 if generate_demo:
     with st.spinner("Generating and loading synthetic SOC data..."):
         generate_sample_data()
-        load_data()
+        ingest_data()
         st.cache_data.clear()
         if 'ranking' in st.session_state:
             del st.session_state['ranking']
