@@ -116,7 +116,8 @@ if verify_ledger:
         st.sidebar.error("Tampering Detected in Ledger!")
 
 # --- Helper variables ---
-has_data = 'ranking' in st.session_state
+has_run = 'ranking' in st.session_state
+has_data = has_run and len(st.session_state['ranking']) > 0
 
 # ==========================================
 # VIEW: Dashboard Overview
@@ -150,6 +151,8 @@ if nav_selection == "Dashboard Overview":
             tooltip=['entity_id', 'attention_index']
         ).properties(height=350)
         st.altair_chart(chart, use_container_width=True)
+    elif has_run:
+        st.success("🎉 Assessment complete: No risks or findings were detected across the portfolio!")
     else:
         st.info("Click 'Run Assessment' in the sidebar to populate the dashboard charts.")
 
@@ -186,6 +189,8 @@ elif nav_selection == "Entity Portfolio":
             "entity_id": st.column_config.TextColumn("Entity ID", width="medium"),
             "Status": st.column_config.TextColumn("Status", width="small")
         })
+    elif has_run:
+        st.success("No risky entities to display.")
     else:
         st.warning("No assessment data available.")
 
@@ -208,7 +213,12 @@ elif nav_selection == "Findings Explorer":
         if f_type != "All": filtered = filtered[filtered['detector_id'] == f_type]
         if f_entity != "All": filtered = filtered[filtered['entity_id'] == f_entity]
         
-        st.dataframe(filtered, use_container_width=True, hide_index=True)
+        if not filtered.empty:
+            st.dataframe(filtered, use_container_width=True, hide_index=True)
+        else:
+            st.info("No findings match the current filters.")
+    elif has_run:
+        st.success("No findings were generated during the assessment.")
     else:
         st.warning("No assessment data available.")
 
@@ -255,6 +265,8 @@ elif nav_selection == "Smart Review Optimiser":
                     file_name='optimized_review_queue.csv',
                     mime='text/csv',
                 )
+    elif has_run:
+        st.success("No findings available to sample.")
     else:
         st.warning("No assessment data available.")
 
