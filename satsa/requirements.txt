@@ -1,0 +1,15 @@
+duckdb
+polars
+fastapi
+uvicorn
+streamlit
+pydantic
+pyarrow
+numpy
+scipy
+scikit-learn
+statsmodels
+jinja2
+weasyprint
+plotly
+pyyaml

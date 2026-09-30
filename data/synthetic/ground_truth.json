@@ -1,0 +1,65 @@
+[
+  {
+    "finding_id": "EG-01",
+    "entity_id": "ENT-24B8CC",
+    "scope": "alert",
+    "target_id": "ALT-F7390B71C4",
+    "description": "High severity alert closed abnormally fast."
+  },
+  {
+    "finding_id": "EG-01",
+    "entity_id": "ENT-902DBD",
+    "scope": "alert",
+    "target_id": "ALT-416D2941D4",
+    "description": "High severity alert closed abnormally fast."
+  },
+  {
+    "finding_id": "EG-01",
+    "entity_id": "ENT-87A25E",
+    "scope": "alert",
+    "target_id": "ALT-9229A11A87",
+    "description": "High severity alert closed abnormally fast."
+  },
+  {
+    "finding_id": "EG-01",
+    "entity_id": "ENT-902DBD",
+    "scope": "alert",
+    "target_id": "ALT-7D91B4F603",
+    "description": "High severity alert closed abnormally fast."
+  },
+  {
+    "finding_id": "EG-01",
+    "entity_id": "ENT-566102",
+    "scope": "alert",
+    "target_id": "ALT-1C6E63D232",
+    "description": "High severity alert closed abnormally fast."
+  },
+  {
+    "finding_id": "EG-01",
+    "entity_id": "ENT-566102",
+    "scope": "alert",
+    "target_id": "ALT-43B0D29C36",
+    "description": "High severity alert closed abnormally fast."
+  },
+  {
+    "finding_id": "NS-01",
+    "entity_id": "ENT-487443",
+    "scope": "asset",
+    "target_id": "AST-87E072B0",
+    "description": "Critical asset produced zero alerts (Negative Space)."
+  },
+  {
+    "finding_id": "NS-01",
+    "entity_id": "ENT-87A25E",
+    "scope": "asset",
+    "target_id": "AST-F2E2AF25",
+    "description": "Critical asset produced zero alerts (Negative Space)."
+  },
+  {
+    "finding_id": "NS-01",
+    "entity_id": "ENT-487443",
+    "scope": "asset",
+    "target_id": "AST-C335328E",
+    "description": "Critical asset produced zero alerts (Negative Space)."
+  }
+]
