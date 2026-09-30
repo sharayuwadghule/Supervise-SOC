@@ -1,0 +1,10 @@
+# Python virtual environment
+venv/
+__pycache__/
+
+# Documentation
+satsa/docs/
+SAT-SA_Final_Implementation_Plan.md
+
+# Deploy bundles
+deploy/
