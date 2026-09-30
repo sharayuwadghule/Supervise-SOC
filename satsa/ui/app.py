@@ -1,9 +1,15 @@
 import streamlit as st
 import pandas as pd
 from pathlib import Path
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+
 from satsa.store.db import get_connection
 from satsa.detectors.eg_01 import run_eg_01
 from satsa.detectors.ns_01 import run_ns_01
+from satsa.scoring.prioritiser import aggregate_capability_scores, calculate_attention_index
+from satsa.audit.chain import log_event, verify_chain
 from satsa.scoring.prioritiser import aggregate_capability_scores, calculate_attention_index
 from satsa.audit.chain import log_event, verify_chain
 

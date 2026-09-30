@@ -77,3 +77,18 @@ This script will extract the source code, simulate downloading the `.whl` packag
 *   [Core Architecture](docs/Architecture.md)
 *   [Architecture Diagram & Flow](docs/Architecture_Diagram.md)
 *   [Slide Presentation](docs/Presentation.md)
+
+---
+
+## 🌐 Deploying to Streamlit Community Cloud (For Demos)
+
+While SAT-SA is designed to be air-gapped, you can deploy it to Streamlit Community Cloud for web-based demonstrations. Because the synthetic data (`/data` folder) is already committed to the repository, deployment is instantaneous.
+
+1. Create a free account at [share.streamlit.io](https://share.streamlit.io/).
+2. Click **"New app"** and authorize your GitHub account.
+3. Select this repository (`sharayuwadghule/Supervise-SOC`) and the `main` branch.
+4. **Main file path:** Enter `satsa/ui/app.py`.
+5. **App URL:** Customize your URL (e.g., `sat-sa-demo`).
+6. Click **Deploy!**
+
+*Note: Streamlit Cloud will automatically read the `satsa/requirements.txt` file and install the necessary dependencies.*
