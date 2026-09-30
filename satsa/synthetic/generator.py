@@ -177,7 +177,7 @@ def export_data(entities: List[Entity], assets: List[Asset], alerts: List[Alert]
     print(f"Exported {len(assets)} assets to Parquet.")
     print(f"Exported {len(alerts)} alerts to Parquet.")
 
-if __name__ == "__main__":
+def generate_sample_data():
     print("Generating healthy baseline data...")
     ents = generate_entities(10) # Reduced to 10 for quick testing
     asts = generate_assets(ents, avg_assets_per_ent=50)
@@ -191,3 +191,6 @@ if __name__ == "__main__":
     print(f"Injected {len(gt)} known weaknesses.")
     export_data(ents, asts, alts, gt)
     print("Synthetic generation complete.")
+
+if __name__ == "__main__":
+    generate_sample_data()

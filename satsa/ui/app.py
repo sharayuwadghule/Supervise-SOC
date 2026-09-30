@@ -15,6 +15,8 @@ from satsa.detectors.ns_01 import run_ns_01
 from satsa.scoring.prioritiser import aggregate_capability_scores, calculate_attention_index
 from satsa.scoring.optimiser import optimize_review_sample
 from satsa.audit.chain import log_event, verify_chain
+from satsa.synthetic.generator import generate_sample_data
+from satsa.ingest.loader import load_data
 
 # --- Page Config ---
 st.set_page_config(page_title="SAT-SA Examiner", page_icon=":material/admin_panel_settings:", layout="wide", initial_sidebar_state="expanded")
@@ -92,10 +94,22 @@ nav_selection = st.sidebar.radio("Main Menu", [
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("### :material/settings: Actions")
-run_assessment = st.sidebar.button(":material/play_arrow: Run Assessment", use_container_width=True)
+run_assessment = st.sidebar.button(":material/play_arrow: Run Assessment", type="primary", use_container_width=True)
 verify_ledger = st.sidebar.button(":material/verified_user: Verify Ledger", use_container_width=True)
+generate_demo = st.sidebar.button(":material/database: Load Demo Data", use_container_width=True)
 
 # --- Assessment Logic ---
+if generate_demo:
+    with st.spinner("Generating and loading synthetic SOC data..."):
+        generate_sample_data()
+        load_data()
+        st.cache_data.clear()
+        if 'ranking' in st.session_state:
+            del st.session_state['ranking']
+        if 'findings' in st.session_state:
+            del st.session_state['findings']
+        st.rerun()
+
 if run_assessment:
     with st.spinner("Executing Anomaly Detectors..."):
         eg01 = run_eg_01()
