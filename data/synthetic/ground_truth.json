@@ -1,65 +1,499 @@
 [
   {
+    "finding_id": "EX-07",
+    "entity_id": "ENT-9A2B2D",
+    "scope": "volume_series",
+    "target_id": "ENT-9A2B2D",
+    "description": "Alert volume flatlines in the last 7 days (Change Point)."
+  },
+  {
+    "finding_id": "EX-08",
+    "entity_id": "GLOBAL",
+    "scope": "analyst",
+    "target_id": "A-10",
+    "description": "Over-regularity: Analyst assigns 'Benign' to everything."
+  },
+  {
+    "finding_id": "EX-05",
+    "entity_id": "ENT-C254AB",
+    "scope": "grid",
+    "target_id": "Access_Sev3",
+    "description": "Missing common grid cell Access_Sev3."
+  },
+  {
+    "finding_id": "EX-04",
+    "entity_id": "ENT-C254AB",
+    "scope": "volume_series",
+    "target_id": "ENT-C254AB",
+    "description": "Alert volume drifted heavily in the second half of the month."
+  },
+  {
     "finding_id": "EG-01",
-    "entity_id": "ENT-BD40A6",
+    "entity_id": "ENT-8902F7",
     "scope": "alert",
-    "target_id": "ALT-82D8FADD86",
+    "target_id": "ALT-F9B18B7431",
     "description": "High severity alert closed abnormally fast."
   },
   {
     "finding_id": "EG-01",
-    "entity_id": "ENT-75750C",
+    "entity_id": "ENT-C254AB",
     "scope": "alert",
-    "target_id": "ALT-ABB45ED4FD",
+    "target_id": "ALT-602EBAB19A",
     "description": "High severity alert closed abnormally fast."
   },
   {
     "finding_id": "EG-01",
-    "entity_id": "ENT-6AC7B4",
+    "entity_id": "ENT-41E8E3",
     "scope": "alert",
-    "target_id": "ALT-58BF1B70BD",
+    "target_id": "ALT-43AF72766A",
     "description": "High severity alert closed abnormally fast."
   },
   {
     "finding_id": "EG-01",
-    "entity_id": "ENT-BD40A6",
+    "entity_id": "ENT-41E8E3",
     "scope": "alert",
-    "target_id": "ALT-A7DDFEB5E7",
+    "target_id": "ALT-A6BC926153",
     "description": "High severity alert closed abnormally fast."
   },
   {
     "finding_id": "EG-01",
-    "entity_id": "ENT-248B5E",
+    "entity_id": "ENT-AF72E3",
     "scope": "alert",
-    "target_id": "ALT-58F1D16593",
+    "target_id": "ALT-1CF7B90003",
     "description": "High severity alert closed abnormally fast."
   },
   {
     "finding_id": "EG-01",
-    "entity_id": "ENT-248B5E",
+    "entity_id": "ENT-AF72E3",
     "scope": "alert",
-    "target_id": "ALT-C494955066",
+    "target_id": "ALT-BFDA43F4A7",
     "description": "High severity alert closed abnormally fast."
   },
   {
     "finding_id": "NS-01",
-    "entity_id": "ENT-BD40A6",
+    "entity_id": "ENT-C254AB",
     "scope": "asset",
-    "target_id": "AST-56752C6F",
+    "target_id": "AST-F0582A08",
     "description": "Critical asset produced zero alerts (Negative Space)."
   },
   {
     "finding_id": "NS-01",
-    "entity_id": "ENT-75750C",
+    "entity_id": "ENT-AF72E3",
     "scope": "asset",
-    "target_id": "AST-EB54D958",
+    "target_id": "AST-747FAFD6",
     "description": "Critical asset produced zero alerts (Negative Space)."
   },
   {
     "finding_id": "NS-01",
-    "entity_id": "ENT-75750C",
+    "entity_id": "ENT-D11B24",
     "scope": "asset",
-    "target_id": "AST-4F899A3F",
+    "target_id": "AST-62575B2B",
     "description": "Critical asset produced zero alerts (Negative Space)."
+  },
+  {
+    "finding_id": "NS-02",
+    "entity_id": "ENT-8902F7",
+    "scope": "category",
+    "target_id": "Phishing",
+    "description": "Entity has 0 Phishing alerts compared to peers."
+  },
+  {
+    "finding_id": "NS-04",
+    "entity_id": "ENT-41E8E3",
+    "scope": "volume",
+    "target_id": "ENT-41E8E3",
+    "description": "Entity has unusually low alert volume compared to its asset count."
+  },
+  {
+    "finding_id": "NS-05",
+    "entity_id": "ENT-5712E4",
+    "scope": "asset_class",
+    "target_id": "Database",
+    "description": "Entity has Database assets but zero alerts for them."
+  },
+  {
+    "finding_id": "NS-06",
+    "entity_id": "ENT-C254AB",
+    "scope": "peer_volume",
+    "target_id": "ENT-C254AB",
+    "description": "Entity alert volume is a global outlier compared to peers."
+  },
+  {
+    "finding_id": "NS-03",
+    "entity_id": "ENT-F5A3D5",
+    "scope": "alert",
+    "target_id": "ALT-E19C3F7736",
+    "description": "High severity alert with no associated case (Negative Space)."
+  },
+  {
+    "finding_id": "EG-03",
+    "entity_id": "ENT-CD46C7",
+    "scope": "alert",
+    "target_id": "ALT-081CF0AD03",
+    "description": "Critical alert closed without escalation."
+  },
+  {
+    "finding_id": "NS-03",
+    "entity_id": "ENT-8902F7",
+    "scope": "alert",
+    "target_id": "ALT-7770EC4F26",
+    "description": "High severity alert with no associated case (Negative Space)."
+  },
+  {
+    "finding_id": "EG-03",
+    "entity_id": "ENT-F5A3D5",
+    "scope": "alert",
+    "target_id": "ALT-ED3894E197",
+    "description": "Critical alert closed without escalation."
+  },
+  {
+    "finding_id": "NS-03",
+    "entity_id": "ENT-D11B24",
+    "scope": "alert",
+    "target_id": "ALT-DC5686F52C",
+    "description": "High severity alert with no associated case (Negative Space)."
+  },
+  {
+    "finding_id": "EG-03",
+    "entity_id": "ENT-D11B24",
+    "scope": "alert",
+    "target_id": "ALT-252769649E",
+    "description": "Critical alert closed without escalation."
+  },
+  {
+    "finding_id": "NS-03",
+    "entity_id": "ENT-F5A3D5",
+    "scope": "alert",
+    "target_id": "ALT-BFE22BF65B",
+    "description": "High severity alert with no associated case (Negative Space)."
+  },
+  {
+    "finding_id": "EG-03",
+    "entity_id": "ENT-AF72E3",
+    "scope": "alert",
+    "target_id": "ALT-63A8D612AA",
+    "description": "Critical alert closed without escalation."
+  },
+  {
+    "finding_id": "NS-03",
+    "entity_id": "ENT-8902F7",
+    "scope": "alert",
+    "target_id": "ALT-31AD3FE961",
+    "description": "High severity alert with no associated case (Negative Space)."
+  },
+  {
+    "finding_id": "NS-03",
+    "entity_id": "ENT-4AB197",
+    "scope": "alert",
+    "target_id": "ALT-31B66F59EC",
+    "description": "High severity alert with no associated case (Negative Space)."
+  },
+  {
+    "finding_id": "NS-03",
+    "entity_id": "ENT-D11B24",
+    "scope": "alert",
+    "target_id": "ALT-753F341D9D",
+    "description": "High severity alert with no associated case (Negative Space)."
+  },
+  {
+    "finding_id": "NS-03",
+    "entity_id": "ENT-AF72E3",
+    "scope": "alert",
+    "target_id": "ALT-EAC0427187",
+    "description": "High severity alert with no associated case (Negative Space)."
+  },
+  {
+    "finding_id": "EG-03",
+    "entity_id": "ENT-4AB197",
+    "scope": "alert",
+    "target_id": "ALT-773D25FC1A",
+    "description": "Critical alert closed without escalation."
+  },
+  {
+    "finding_id": "EG-03",
+    "entity_id": "ENT-4AB197",
+    "scope": "alert",
+    "target_id": "ALT-F222116608",
+    "description": "Critical alert closed without escalation."
+  },
+  {
+    "finding_id": "EG-03",
+    "entity_id": "ENT-9A2B2D",
+    "scope": "alert",
+    "target_id": "ALT-5056B711BC",
+    "description": "Critical alert closed without escalation."
+  },
+  {
+    "finding_id": "EG-03",
+    "entity_id": "ENT-AF72E3",
+    "scope": "alert",
+    "target_id": "ALT-9A6261C95A",
+    "description": "Critical alert closed without escalation."
+  },
+  {
+    "finding_id": "NS-03",
+    "entity_id": "ENT-8902F7",
+    "scope": "alert",
+    "target_id": "ALT-4BF510DA75",
+    "description": "High severity alert with no associated case (Negative Space)."
+  },
+  {
+    "finding_id": "EG-03",
+    "entity_id": "ENT-D11B24",
+    "scope": "alert",
+    "target_id": "ALT-81DEED1336",
+    "description": "Critical alert closed without escalation."
+  },
+  {
+    "finding_id": "NS-03",
+    "entity_id": "ENT-8902F7",
+    "scope": "alert",
+    "target_id": "ALT-A80B457D72",
+    "description": "High severity alert with no associated case (Negative Space)."
+  },
+  {
+    "finding_id": "EG-03",
+    "entity_id": "ENT-8902F7",
+    "scope": "alert",
+    "target_id": "ALT-A6D94C3429",
+    "description": "Critical alert closed without escalation."
+  },
+  {
+    "finding_id": "NS-03",
+    "entity_id": "ENT-AF72E3",
+    "scope": "alert",
+    "target_id": "ALT-B405CA03DE",
+    "description": "High severity alert with no associated case (Negative Space)."
+  },
+  {
+    "finding_id": "NS-03",
+    "entity_id": "ENT-5712E4",
+    "scope": "alert",
+    "target_id": "ALT-262096D708",
+    "description": "High severity alert with no associated case (Negative Space)."
+  },
+  {
+    "finding_id": "EG-03",
+    "entity_id": "ENT-AF72E3",
+    "scope": "alert",
+    "target_id": "ALT-346264B212",
+    "description": "Critical alert closed without escalation."
+  },
+  {
+    "finding_id": "NS-03",
+    "entity_id": "ENT-CD46C7",
+    "scope": "alert",
+    "target_id": "ALT-2D2D317D88",
+    "description": "High severity alert with no associated case (Negative Space)."
+  },
+  {
+    "finding_id": "EG-03",
+    "entity_id": "ENT-AF72E3",
+    "scope": "alert",
+    "target_id": "ALT-FD7267BFE0",
+    "description": "Critical alert closed without escalation."
+  },
+  {
+    "finding_id": "EG-03",
+    "entity_id": "ENT-8902F7",
+    "scope": "alert",
+    "target_id": "ALT-30BC309065",
+    "description": "Critical alert closed without escalation."
+  },
+  {
+    "finding_id": "EX-01",
+    "entity_id": "GLOBAL",
+    "scope": "analyst",
+    "target_id": "A-02",
+    "description": "Analyst exhibits highly anomalous closure patterns (Isolation Forest)."
+  },
+  {
+    "finding_id": "EG-06",
+    "entity_id": "ENT-D11B24",
+    "scope": "analyst",
+    "target_id": "A-03",
+    "description": "Bulk closures by one analyst in a short window."
+  },
+  {
+    "finding_id": "EG-04",
+    "entity_id": "ENT-F5A3D5",
+    "scope": "analyst",
+    "target_id": "A-02",
+    "description": "Repetitive template-driven closure notes."
+  },
+  {
+    "finding_id": "EG-05",
+    "entity_id": "ENT-AF72E3",
+    "scope": "rule",
+    "target_id": "RULE-025",
+    "description": "Rule fires regularly but has no analyst action events."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-8902F7",
+    "scope": "case",
+    "target_id": "CAS-98D3F748",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-AF72E3",
+    "scope": "case",
+    "target_id": "CAS-7EC9815D",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-F5A3D5",
+    "scope": "case",
+    "target_id": "CAS-7869E9C5",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-D11B24",
+    "scope": "case",
+    "target_id": "CAS-81721EA2",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-5712E4",
+    "scope": "case",
+    "target_id": "CAS-0E581713",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-CD46C7",
+    "scope": "case",
+    "target_id": "CAS-849D45EC",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-AF72E3",
+    "scope": "case",
+    "target_id": "CAS-54248124",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-4AB197",
+    "scope": "case",
+    "target_id": "CAS-D7008C59",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-F5A3D5",
+    "scope": "case",
+    "target_id": "CAS-C5CEF4E7",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-F5A3D5",
+    "scope": "case",
+    "target_id": "CAS-69C397ED",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-4AB197",
+    "scope": "case",
+    "target_id": "CAS-D18CE5E0",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-9A2B2D",
+    "scope": "case",
+    "target_id": "CAS-45AB8778",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-F5A3D5",
+    "scope": "case",
+    "target_id": "CAS-43165412",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-F5A3D5",
+    "scope": "case",
+    "target_id": "CAS-E241A00D",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-9A2B2D",
+    "scope": "case",
+    "target_id": "CAS-F8DF5812",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-D11B24",
+    "scope": "case",
+    "target_id": "CAS-685ADFD0",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-5712E4",
+    "scope": "case",
+    "target_id": "CAS-555EEDEA",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-8902F7",
+    "scope": "case",
+    "target_id": "CAS-83724D76",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-4AB197",
+    "scope": "case",
+    "target_id": "CAS-3A66E221",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-D11B24",
+    "scope": "case",
+    "target_id": "CAS-24A351D4",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EG-02",
+    "entity_id": "ENT-4AB197",
+    "scope": "case",
+    "target_id": "CAS-56BE02D7",
+    "description": "Case closed unusually quickly conditioned on severity."
+  },
+  {
+    "finding_id": "EX-03",
+    "entity_id": "GLOBAL",
+    "scope": "analyst",
+    "target_id": "A-02",
+    "description": "Analyst has zero variance in closure time."
+  },
+  {
+    "finding_id": "EX-02",
+    "entity_id": "GLOBAL",
+    "scope": "analyst",
+    "target_id": "A-07",
+    "description": "Analyst uses exactly the same event path for all cases."
+  },
+  {
+    "finding_id": "EX-06",
+    "entity_id": "ENT-D11B24",
+    "scope": "root_cause",
+    "target_id": "Custom Entity Exception",
+    "description": "Entity uses a frequent root cause that is completely absent in peers."
   }
 ]

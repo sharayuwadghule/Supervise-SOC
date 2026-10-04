@@ -27,7 +27,7 @@ class Alert(BaseModel):
     alert_id: str
     entity_id: str
     asset_id: Optional[str] = None
-    rule_id: str
+    rule_id: Optional[str] = None
     category: str
     severity: int  # e.g., 1 to 5
     created_ts: datetime
@@ -41,6 +41,7 @@ class Alert(BaseModel):
 
 class Case(BaseModel):
     case_id: str
+    entity_id: str
     alert_ids: List[str]
     opened_ts: datetime
     closed_ts: Optional[datetime] = None
@@ -52,6 +53,7 @@ class Case(BaseModel):
 
 class CaseEvent(BaseModel):
     case_id: str
+    entity_id: str
     ts: datetime
     event_type: str  # assign, enrich, pivot, note, evidence, handoff, status
     actor: str
@@ -59,6 +61,7 @@ class CaseEvent(BaseModel):
 class Escalation(BaseModel):
     case_id: Optional[str] = None
     alert_id: Optional[str] = None
+    entity_id: str
     ts: datetime
     from_tier: str
     to_tier: str
@@ -67,6 +70,7 @@ class Escalation(BaseModel):
 
 class Note(BaseModel):
     case_id: str
+    entity_id: str
     ts: datetime
     text: str
 
