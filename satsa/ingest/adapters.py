@@ -18,6 +18,9 @@ def _write_parquet(objects: list, model_class, out_path: Path):
                               if v is not None and not (isinstance(v, float) and math.isnan(v))})
     validated = [model_class(**obj) for obj in clean_objects]
     df = pd.DataFrame([obj.model_dump() for obj in validated])
+    
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    
     if out_path.exists():
         df = pd.concat([pd.read_parquet(out_path), df], ignore_index=True)
     df.to_parquet(out_path, engine="pyarrow", index=False)
@@ -29,6 +32,9 @@ def _upsert_parquet(records: list, out_path: Path, entity_id: str):
     if not records:
         return
     df = pd.DataFrame(records)
+    
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    
     if out_path.exists():
         old = pd.read_parquet(out_path)
         if "entity_id" in old.columns:
