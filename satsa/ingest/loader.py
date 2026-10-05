@@ -40,3 +40,7 @@ def load_data(*args, **kwargs):
             
     conn.close()
     return True
+
+if __name__ == "__main__":
+    load_data()
+    print("DuckDB views successfully created/updated.")

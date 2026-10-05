@@ -25,7 +25,7 @@ python -m venv venv
 # (On Linux/Mac use: source venv/bin/activate)
 
 # Install the required dependencies
-pip install -r satsa/requirements.txt
+pip install -r requirements.txt
 ```
 
 ### 2. Configure Python Path
@@ -47,6 +47,7 @@ Load the generated Parquet files into DuckDB views so they can be queried by our
 ```powershell
 python satsa/ingest/loader.py
 ```
+*(Note: Steps 3 and 4 can also be triggered automatically by clicking "Load Demo Data" in the Streamlit UI).*
 
 ### 5. Run the Validation Harness (Optional)
 To run the automated test that proves our detectors successfully catch the injected weaknesses, and to simulate the efficiency of the Review-Sample Optimiser:
